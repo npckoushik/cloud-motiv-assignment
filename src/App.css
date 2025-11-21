@@ -1,0 +1,164 @@
+/* General Layout */
+.app-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+
+.pdf-view {
+  flex: 3;
+  padding: 20px;
+  background-color: white;
+  border-right: 1px solid #ddd;
+}
+
+.analysis-panel {
+  flex: 1.5;
+  background-color: #f7f7f7;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Headings and Titles */
+.section-heading {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #004470; /* Dark blue/Maersk color approximation */
+}
+
+.sub-heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Financial Tables Layout */
+.financial-tables-container {
+  display: flex;
+  gap: 20px;
+}
+
+.income-statement-column, .comprehensive-income-column {
+    flex: 1;
+}
+
+.placeholder-table {
+    /* Mimic the space taken by the second table */
+    height: 300px; 
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Condensed Income Statement Table */
+.income-statement-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.income-statement-table th, .income-statement-table td {
+  border: 1px solid #e0e0e0;
+  padding: 5px 8px;
+  text-align: right;
+  height: 25px; /* Fixed height for visual consistency */
+}
+
+.income-statement-table thead th {
+  background-color: #f0f8ff; /* Light blue header */
+  font-weight: bold;
+}
+
+.label-column {
+  text-align: left;
+  width: 50%;
+  background-color: #f5f5f5;
+}
+
+.note-value {
+    width: 30px; /* Space for the note column */
+}
+
+.data-column {
+  background-color: #e6f7ff; /* Very light blue background for data area */
+  width: 10%;
+}
+
+/* --- The Core Highlighting Feature --- */
+.highlight-row {
+  background-color: yellow !important;
+  transition: background-color 0.3s ease-in-out;
+}
+.highlight-row td {
+  background-color: yellow !important; /* Apply to all cells */
+}
+
+/* Analysis Panel Styling */
+.analysis-content {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.analysis-point {
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 5px 0;
+  padding: 2px;
+}
+
+.page-ref {
+    font-weight: bold;
+}
+
+.target-note-block {
+  margin: 10px 0;
+  padding: 5px;
+  cursor: pointer; /* Indicates it's clickable */
+  border: 1px solid #ccc; /* Border to delineate the interactive block */
+  background-color: #ffffe0; /* Light yellow background for the analysis block */
+}
+
+.highlight-trigger {
+    background-color: #ffffe0;
+}
+
+.highlight-id {
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.supporting-evidence {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.evidence-block {
+    font-size: 11px;
+    padding: 5px;
+    border-left: 3px solid #004470;
+    margin-bottom: 10px;
+}
+
+.maersk-quote {
+    font-style: italic;
+    color: #333;
+}
+
+.chat-data-section {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    text-align: center;
+}
